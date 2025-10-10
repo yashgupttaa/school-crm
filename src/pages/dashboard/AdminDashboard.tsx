@@ -1,9 +1,21 @@
 import React from "react";
+import StatsCard from "../../components/StatsCard";
+import { AdminDashboardStats } from "../../config/AdminDashboard.config";
 
 const AdminDashboard: React.FC = () => {
   return (
-    <div className="">
-      <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
+      <div className="lg:col-span-8">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+          {AdminDashboardStats.map((stat) => (
+            <StatsCard title={stat.title} value={stat.value} deltaPercent={stat.deltaPercent} className={stat.className} />
+          ))}
+        </div>
+      </div>
+      <div className="lg:col-span-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
+        <h2 className="text-lg font-semibold text-gray-900 mb-2">Dashboard</h2>
+        <p className="text-sm text-gray-600">Sidebar widgets go here.</p>
+      </div>
     </div>
   );
 };

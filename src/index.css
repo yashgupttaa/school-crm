@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+/* Global design tokens */
+:root {
+  --color-text-primary: #364153;
+  --color-text-secondary: #a3b3ff;
+  --color-text-tertiary: #fff085;
+  --color-text-quaternary: #c1e8ec;
+}
+
+/* Apply primary text color app-wide */
+@layer base {
+  html {
+    color: var(--color-text-primary);
+  }
+}
+
+/* Optional utility for easy reuse: text-primary */
+@layer utilities {
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+}

@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { sidebarConfig, type Role, type NavItem } from "../config/sidebar.config";
+import { sidebarConfig, type Role, type NavItem } from "../config/sidebar.config.tsx";
 
 type Props = {
   role: Role;
@@ -20,12 +20,12 @@ export default function Sidebar({ role, isOpen = false, onClose }: Props) {
       to={item.path}
       className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 group relative
         ${isActive(item.path) 
-          ? "bg-blue-500 text-white" 
+          ? "bg-[var(--color-text-quaternary)] text-gray-900" 
           : "text-gray-700 hover:bg-gray-50"
         }`}
     >
       <span className="text-lg">{item.icon}</span>
-      <span className={`text-sm font-medium ${isActive(item.path) ? "text-white" : "text-gray-700"}`}>
+      <span className={`text-sm font-medium ${isActive(item.path) ? "text-gray-900" : "text-gray-700"}`}>
         {item.label}
       </span>
       {item.hasSubmenu && (
