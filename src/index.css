@@ -5,7 +5,26 @@
   --color-text-primary: #364153;
   --color-text-secondary: #a3b3ff;
   --color-text-tertiary: #fff085;
-  --color-text-quaternary: #c1e8ec;
+  --color-text-quaternary: #AEE3F2;
+  --color-text-gray: #EFF3F7;
+  /* Calendar additions */
+  --color-surface: #ffffff;
+  --color-border: #E7EDF5;
+  --color-muted-text: #96A0B5;
+  --color-accent: #AEE3F2; /* reuse quaternary for accent */
+  --color-accent-weak: #ECF9FD;
+  /* Agenda */
+  --agenda-purple-bg: #EEF0FF;
+  --agenda-purple-accent: #C7CEFF;
+  --agenda-yellow-bg: #FFF4D9;
+  --agenda-yellow-accent: #FFE6A6;
+  --agenda-blue-bg: #E7F7FD;
+  --agenda-blue-accent: #BEEAFA;
+  /* Status colors */
+  --color-success: #00A870;
+  --color-success-bg: #E6F7F0;
+  --color-danger: #FF4D4F;
+  --color-danger-bg: #FFECEC;
 }
 
 /* Apply primary text color app-wide */

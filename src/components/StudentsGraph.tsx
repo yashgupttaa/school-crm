@@ -3,7 +3,7 @@ import { FiUser } from "react-icons/fi";
 type Props = {
   boys: number;
   girls: number;
-  size?: number; // px
+  size?: number; 
 };
 
 export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
@@ -12,9 +12,9 @@ export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
   const girlsPct = 100 - boysPct;
 
   // Palette close to screenshot
-  const sky = "#AEE3F2"; // cyan
-  const yellow = "#F6D57A"; // warm yellow
-  const ringBg = "#EFF3F7"; // pale ring background
+  const sky = "var(--color-text-quaternary)";
+  const yellow = "var(--color-text-tertiary)";
+  const ringBg = "var(--color-text-gray)"; 
   const innerDisc = "#F7FAFC"; // center disc tint
 
   // Rings geometry
@@ -25,8 +25,8 @@ export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
   const c = 2 * Math.PI;
 
   // Start angles to visually match screenshot
-  const outerStartDeg = -50; // boys ring
-  const innerStartDeg = 20;  // girls ring
+  const outerStartDeg = 130; // boys ring (reverse direction)
+  const innerStartDeg = 20;  // girls ring (same direction)
 
   const pctToDash = (pct: number, radius: number) => {
     const circumference = c * radius;
@@ -44,9 +44,9 @@ export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
   };
 
   return (
-    <div className="rounded-2xl border border-gray-100 bg-white p-4 sm:p-5 shadow-sm">
+    <div className="rounded-2xl border-gray-100 bg-white p-4 sm:p-5 shadow-sm">
       <div className="flex items-start justify-between">
-        <h3 className="text-[15px] font-semibold">Students</h3>
+        <h3 className="text-lg font-semibold" style={{ color: 'var(--color-text-primary)' }}>Students</h3>
         <button className="text-gray-400">•••</button>
       </div>
 
@@ -60,7 +60,7 @@ export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
           <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
             <g transform={`translate(${size / 2}, ${size / 2}) rotate(-90)`}>
               {/* Outer background ring */}
-              {/* <circle r={outerR} fill="none" stroke={ringBg} strokeWidth={outerStroke} /> */}
+              <circle r={outerR} fill="none" stroke={ringBg} strokeWidth={outerStroke} />
               {/* Outer progress (boys) */}
               <circle
                 r={outerR}
@@ -73,7 +73,7 @@ export default function StudentsGraph({ boys, girls, size = 220 }: Props) {
               />
 
               {/* Inner background ring */}
-              {/* <circle r={innerR} fill="none" stroke={ringBg} strokeWidth={innerStroke} /> */}
+              <circle r={innerR} fill="none" stroke={ringBg} strokeWidth={innerStroke} />
               {/* Inner progress (girls) */}
               <circle
                 r={innerR}

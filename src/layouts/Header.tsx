@@ -9,7 +9,7 @@ export default function Header({ onOpenMenu }: Props) {
   const [query, setQuery] = useState("");
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-gray-100">
+    <header className="top-0 z-40 w-full border-b border-gray-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex h-16 items-center gap-3">
           {/* Hamburger for mobile */}
