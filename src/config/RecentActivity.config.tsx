@@ -1,0 +1,38 @@
+export const RecentActivityData = [
+    {
+        id: "1",
+        avatarUrl: "https://i.pinimg.com/736x/f5/3f/e6/f53fe6ba57b9f80c5f9d1125f22deea0.jpg",
+        actor: "Dr. John Doe",
+        action: "assigned new",
+        subject: "English Literature",
+        context: "homework",
+        timeAgo: "2025-10-15",
+    },
+    {
+        id: "2",
+        avatarUrl: "https://i.pinimg.com/736x/44/15/57/441557cb12f2d439695026f98ff161d7.jpg",
+        actor: "Dr. John Doe",
+        action: "assigned new",
+        subject: "English Literature",
+        context: "homework",
+        timeAgo: "2025-10-15",
+    },
+    {
+        id: "3",
+        avatarUrl: "https://i.pinimg.com/736x/7d/9c/af/7d9caf978ab0ca93e50c9b66eb557517.jpg",
+        actor: "Dr. John Doe",
+        action: "assigned new",
+        subject: "English Literature",
+        context: "homework",
+        timeAgo: "2025-10-15",
+    },
+    {
+        id: "4",
+        avatarUrl: "https://i.pinimg.com/736x/05/18/01/051801fd6bcc716a35502ae3438bee3e.jpg",
+        actor: "Dr. John Doe",
+        action: "assigned new",
+        subject: "English Literature",
+        context: "homework",
+        timeAgo: "2025-10-15",
+    },
+];

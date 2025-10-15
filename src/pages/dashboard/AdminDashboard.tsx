@@ -12,6 +12,12 @@ import EarningsGraph from "../../components/EarningsGraph";
 import StatsMiniCard from "../../components/StatsMiniCard";
 import { EarningsData } from "../../config/EarningsGrapg.config";
 import { FiAward, FiBookOpen } from "react-icons/fi";
+import StudentActivity from "../../components/StudentActivity";
+import { StudentActivityData }   from "../../config/StudentActivity.config";
+import NoticeBoard from "../../components/NoticeBoard";
+import { NoticeBoardData } from "../../config/NoticeBoard.config";
+import RecentActivity from "../../components/RecentActivity";
+import { RecentActivityData } from "../../config/RecentActivity.config";
 
 const AdminDashboard: React.FC = () => {
 
@@ -70,6 +76,21 @@ const AdminDashboard: React.FC = () => {
         <div className="rounded-lg border-gray-200 bg-white shadow-sm">
           <Message items={MessagesData} />
         </div>
+      </div>
+
+      {/* Student Activity */}
+      <div className="lg:col-span-3 space-y-4">
+        <StudentActivity items={StudentActivityData} />
+      </div>  
+
+      {/* Notice Board */}
+      <div className="lg:col-span-6 space-y-4">
+        <NoticeBoard items={NoticeBoardData} />
+      </div>
+
+      {/* Recent Activity */}
+      <div className="lg:col-span-3 space-y-4">
+        <RecentActivity items={RecentActivityData} />
       </div>
     </div>
   );

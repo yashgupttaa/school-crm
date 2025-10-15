@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { sidebarConfig, type Role, type NavItem } from "../config/sidebar.config.tsx";
+import { FiChevronRight } from "react-icons/fi";
 
 type Props = {
   role: Role;
@@ -30,7 +31,7 @@ export default function Sidebar({ role, isOpen = false, onClose }: Props) {
       </span>
       {item.hasSubmenu && (
         <span className="ml-auto text-gray-400 group-hover:text-gray-600 text-xs">
-          ▶
+          <FiChevronRight className="w-4 h-4" />
         </span>
       )}
     </Link>
@@ -39,7 +40,7 @@ export default function Sidebar({ role, isOpen = false, onClose }: Props) {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="hidden md:flex w-64 h-screen bg-white border-r border-gray-100 flex-col">
+      <aside className="hidden md:flex w-64 h-screen bg-white border-r border-gray-100 flex-col sticky top-0 left-0">
       {/* Logo Section */}
       <div className="p-6 pb-4">
         <div className="flex items-center gap-3">
