@@ -1,0 +1,19 @@
+import type { Student } from "../models/students";
+
+export const StudentsData: Student[] = [
+    { id: "1", avatar: "https://i.pravatar.cc/64?img=13", name: "Aiden Adams", email: "aiden.adams@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "2", avatar: "https://i.pravatar.cc/64?img=12", name: "Jane Doe", email: "jane.doe@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "3", avatar: "https://i.pravatar.cc/64?img=14", name: "Emma Wilson", email: "emma.wilson@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "4", avatar: "https://i.pravatar.cc/64?img=15", name: "Liam Johnson", email: "liam.johnson@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "5", avatar: "https://i.pravatar.cc/64?img=16", name: "Olivia Davis", email: "olivia.davis@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "6", avatar: "https://i.pravatar.cc/64?img=17", name: "Noah Smith", email: "noah.smith@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "7", avatar: "https://i.pravatar.cc/64?img=18", name: "Isabella Martinez", email: "isabella.martinez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "8", avatar: "https://i.pravatar.cc/64?img=19", name: "William Lee", email: "william.lee@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "9", avatar: "https://i.pravatar.cc/64?img=20", name: "Sophia Rodriguez", email: "sophia.rodriguez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "10", avatar: "https://i.pravatar.cc/64?img=21", name: "James Garcia", email: "james.garcia@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "11", avatar: "https://i.pravatar.cc/64?img=22", name: "Ava Hernandez", email: "ava.hernandez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "12", avatar: "https://i.pravatar.cc/64?img=23", name: "David Rodriguez", email: "david.rodriguez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "13", avatar: "https://i.pravatar.cc/64?img=24", name: "Sophia Rodriguez", email: "sophia.rodriguez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "14", avatar: "https://i.pravatar.cc/64?img=25", name: "James Garcia", email: "james.garcia@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Male", dob: "1990-01-01", parentPhone: "1234567890" },
+    { id: "15", avatar: "https://i.pravatar.cc/64?img=26", name: "Ava Hernandez", email: "ava.hernandez@example.com", class: "1A", phone: "1234567890", address: "123 Main St, Anytown, USA", gender: "Female", dob: "1990-01-01", parentPhone: "1234567890" },
+];  

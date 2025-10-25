@@ -32,8 +32,8 @@ export const sidebarConfig: Record<Role, { menu: NavItem[]; other: NavItem[] }> 
   admin: {
     menu: [
       { label: "Dashboard", path: "/dashboard", icon: <FiHome /> },
-      { label: "Teachers", path: "/dashboard/teachers", icon: <FiAward /> },
-      { label: "Students", path: "/dashboard/students", icon: <FiUsers /> },
+      { label: "Teachers", path: "/teachers", icon: <FiAward /> },
+      { label: "Students", path: "/students", icon: <FiUsers /> },
       { label: "Attendance", path: "/dashboard/attendance", icon: <FiLink /> },
       { label: "Finance", path: "/dashboard/finance", icon: <FiDollarSign />, hasSubmenu: true },
       { label: "Notice", path: "/dashboard/notice", icon: <FiClipboard /> },
