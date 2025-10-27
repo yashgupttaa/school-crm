@@ -58,13 +58,13 @@ export default function DataTable<TData, TValue>({
         </div>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="min-w-full text-sm">
+      <div className="overflow-x-auto w-full">
+        <table className="text-sm" style={{ whiteSpace: 'nowrap', width: '100%' }}>
           <thead>
             {table.getHeaderGroups().map((headerGroup: any) => (
               <tr key={headerGroup.id} className="text-left" style={{ color: "var(--color-text-primary)" }}>
                 {headerGroup.headers.map((header: any) => (
-                  <th key={header.id} className="px-4 py-3 font-medium bg-[var(--color-text-gray)]/60 first:rounded-l-xl last:rounded-r-xl">
+                  <th key={header.id} className="px-4 py-3 font-medium bg-[var(--color-text-gray)]/60 first:rounded-l-xl last:rounded-r-xl whitespace-nowrap">
                     {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
                   </th>
                 ))}
@@ -75,7 +75,7 @@ export default function DataTable<TData, TValue>({
             {table.getRowModel().rows.map((row: any) => (
               <tr key={row.id} className={`border-b last:border-0`} style={{ borderColor: "var(--color-border)" }}>
                 {row.getVisibleCells().map((cell: any) => (
-                  <td key={cell.id} className={`px-4 py-3 ${rowClassName ? rowClassName(row.original) : ""}`}> 
+                  <td key={cell.id} className={`px-4 py-3 whitespace-nowrap ${rowClassName ? rowClassName(row.original) : ""}`}> 
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}
